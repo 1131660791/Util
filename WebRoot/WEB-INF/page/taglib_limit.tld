@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 			<!-- 分页导入tld -->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>
+		this is limit tourist access backplate
+	</description>
+	<display-name>limit taglib</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>limit</short-name>
+	<uri>http://www.util.com/limit</uri> <!-- 页面引用地址 -->
+	<tag>
+	    <description>taglib_limit</description>
+	    <name>weight</name>
+		<tag-class>util.paging.TagLibLimit</tag-class> <!-- 画页面工具 -->
+		<body-content>JSP</body-content>
+		<!-- 标签的属性声明-->
+	    <attribute>
+	       <name>userId</name>
+	       <required>false</required>
+	       <rtexprvalue>true</rtexprvalue>
+	       <type>java.lang.String</type>
+	    </attribute>
+	</tag>
+</taglib>	
